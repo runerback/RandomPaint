@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89389E08-825C-4068-86B9-540CB73CAF29}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{F6178C52-EEDA-46BD-BD89-299C272873EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <RootNamespace>RandomPaint</RootNamespace>
-    <AssemblyName>RandomPaint</AssemblyName>
+    <AssemblyName>Definition</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,36 +32,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Definition\Definition.csproj">
-      <Project>{f6178c52-eeda-46bd-bd89-299c272873ea}</Project>
-      <Name>Definition</Name>
-    </ProjectReference>
+    <Compile Include="IColor.cs" />
+    <Compile Include="IColorMaker.cs" />
+    <Compile Include="IColorValueMaker.cs" />
+    <Compile Include="ILocation.cs" />
+    <Compile Include="IPaintBoard.cs" />
+    <Compile Include="IPainter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

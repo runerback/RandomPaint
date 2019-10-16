@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomPaint", "RandomPaint\RandomPaint.csproj", "{89389E08-825C-4068-86B9-540CB73CAF29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Definition", "Definition\Definition.csproj", "{F6178C52-EEDA-46BD-BD89-299C272873EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{89389E08-825C-4068-86B9-540CB73CAF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89389E08-825C-4068-86B9-540CB73CAF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89389E08-825C-4068-86B9-540CB73CAF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6178C52-EEDA-46BD-BD89-299C272873EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6178C52-EEDA-46BD-BD89-299C272873EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6178C52-EEDA-46BD-BD89-299C272873EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6178C52-EEDA-46BD-BD89-299C272873EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
