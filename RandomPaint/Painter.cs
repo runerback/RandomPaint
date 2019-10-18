@@ -16,7 +16,8 @@ namespace RandomPaint
 
             updatedPixels.Add(new Pixel(color, location));
 
-            Task.Run(() => Updated?.Invoke(this, EventArgs.Empty));
+            if(notifyUpdated)
+                Task.Run(() => Updated?.Invoke(this, EventArgs.Empty));
         }
 
         public bool TryGetNext(out Pixel pixel)
@@ -24,6 +25,20 @@ namespace RandomPaint
             return updatedPixels.TryTake(out pixel);
         }
 
+        private bool notifyUpdated = true;
+
         public event EventHandler Updated;
+
+        public void BeginPaint()
+        {
+            notifyUpdated = false;
+        }
+
+        public void EndPaint()
+        {
+            notifyUpdated = true;
+
+            Task.Run(() => Updated?.Invoke(this, EventArgs.Empty));
+        }
     }
 }

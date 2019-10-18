@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.paintBoard1 = new RandomPaint.PaintBoard();
+            this.SuspendLayout();
+            // 
+            // paintBoard1
+            // 
+            this.paintBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paintBoard1.Location = new System.Drawing.Point(0, 0);
+            this.paintBoard1.Name = "paintBoard1";
+            this.paintBoard1.Size = new System.Drawing.Size(800, 450);
+            this.paintBoard1.TabIndex = 0;
+            this.paintBoard1.Text = "paintBoard1";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.paintBoard1);
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private PaintBoard paintBoard1;
     }
 }
 

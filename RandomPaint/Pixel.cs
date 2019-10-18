@@ -12,5 +12,12 @@ namespace RandomPaint
 
         public IColor Color { get; }
         public ILocation Location { get; }
+
+        public static IColor[,] GetColors(Pixel[] pixels)
+        {
+            if (pixels == null || pixels.Length == 0)
+                return new IColor[0, 0];
+            throw new NotImplementedException();
+        }
     }
 }
