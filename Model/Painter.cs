@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace RandomPaint
 {
-    sealed class Painter : IPainter
+    public sealed class Painter : IPainter
     {
         private readonly ConcurrentBag<Pixel> updatedPixels =
             new ConcurrentBag<Pixel>();
@@ -16,7 +16,7 @@ namespace RandomPaint
 
             updatedPixels.Add(new Pixel(color, location));
 
-            if(notifyUpdated)
+            if (notifyUpdated)
                 Task.Run(() => Updated?.Invoke(this, EventArgs.Empty));
         }
 

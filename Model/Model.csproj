@@ -45,6 +45,9 @@
     <Compile Include="ColorEqualityComparer.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationEqualityComparer.cs" />
+    <Compile Include="PaintBoardService.cs" />
+    <Compile Include="Painter.cs" />
+    <Compile Include="Pixel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Definition\Definition.csproj">

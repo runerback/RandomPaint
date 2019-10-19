@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.paintBoard1 = new RandomPaint.PaintBoard();
+            this.paintBoard1 = new RandomPaint.PaintBoardControl();
             this.SuspendLayout();
             // 
             // paintBoard1
@@ -54,7 +54,7 @@
 
         #endregion
 
-        private PaintBoard paintBoard1;
+        private PaintBoardControl paintBoard1;
     }
 }
 

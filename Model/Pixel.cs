@@ -2,7 +2,7 @@
 
 namespace RandomPaint
 {
-    sealed class Pixel
+    public sealed class Pixel
     {
         public Pixel(IColor color, ILocation location)
         {
